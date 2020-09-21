@@ -7,7 +7,7 @@ mag=a(:,10);
 
 f1=figure;
 axes('Position',[0.1 0.2 0.8 0.6])
-stem(time,mag,'LineStyle','None')
+plot(time,mag,'.')
 xlim([floor(min(time)) max(time)]);
 ylim([min(mag) max(mag)])
 xlabel('Time [years]');
