@@ -11,7 +11,6 @@ ar=mag_rounding(a);
 
 %% 02. Depth distribution
 depth_distr(ar);
-
 %% 03. Cum Vs. Time
 cum_time(ar);
 %% 04. Mag Vs Time
@@ -20,5 +19,5 @@ mag_time(ar);
 lat_time(ar);
 %% 06. Spatial Map
 map_xy(ar)
-%% 08. GOF [entire catalog]
-mc_gof(ar);
+%% 07. GOF [entire catalog]
+MCgft(ar);
