@@ -3,13 +3,12 @@ function []=depth_distr(a)
 
 depth=a(:,9);
 
-f1=figure;
+figure
 histogram(depth,min(depth):0.5:max(depth))
 xlabel('Depth (km)')
 ylabel('N obs')
 set(gca,'FontSize',14,'FontName','Helvetica')
 
-saveas(f1,'Depth_distr.eps','eps')
-
-close(f1)
+% saveas(f1,'Depth_distr.eps','eps')
+% close(f1)
 end

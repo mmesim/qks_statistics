@@ -84,7 +84,7 @@ semilogy(RNC(i:end,1),y_synth,'m:','LineWidth',2)
 title('FMD','FontSize',14)
 xlabel ('Magnitude','FontSize',14)
 ylabel('Number of earthquakes','FontSize',14)
-legend ('Non-Cummulative','Cummulative')
+legend ('Non-Cumulative','Cumulative')
 xlim([min(mag) max(mag)])
 axis square
 

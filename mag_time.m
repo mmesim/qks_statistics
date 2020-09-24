@@ -5,7 +5,7 @@ time=decyear(a(:,1:6));
 %Magnitude
 mag=a(:,10);
 
-f1=figure;
+figure
 axes('Position',[0.1 0.2 0.8 0.6])
 plot(time,mag,'.')
 xlim([floor(min(time)) max(time)]);

@@ -8,6 +8,7 @@ fclose(fin);
 
 a=cell2mat(a);
 
+%Keep events with magnitudes
 a=a(a(:,10)>-9.99,:);
 
 

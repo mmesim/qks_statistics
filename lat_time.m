@@ -5,7 +5,7 @@ time=decyear(a(:,1:6));
 %Latitude
 lat=a(:,7);
 
-f1=figure;
+figure
 plot(time,lat,'.')
 xlim([floor(min(time)) max(time)]);
 ylim([min(lat) max(lat)])
@@ -15,6 +15,6 @@ myticks=floor(min(time):5:max(time));
 
 set(gca,'FontSize',15,'FontName','Helvetica','Xtick',myticks)
 
-saveas(f1,'lat_time.eps','eps')
-close(f1)
+% saveas(f1,'lat_time.eps','eps')
+% close(f1)
 end

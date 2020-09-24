@@ -4,7 +4,7 @@ lat=a(:,7);
 lon=a(:,8);
 
 %M_map map
-% f1=figure;
+figure
 %Projection and map boundaries
 m_proj('mercator','longitudes',[min(lon)-0.5 max(lon)+0.5], ...
        'latitudes',[min(lat)-0.5 max(lat)+0.5],.5);
