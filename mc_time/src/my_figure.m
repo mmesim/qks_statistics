@@ -14,30 +14,28 @@ nval(1:Nstep,1)=val(1:Nstep,1);
 
 %Do the same for unc.
 Upunc=val+unc;
-Upunc= filter(ones(1,Nstep)/Nstep,1,Upunc);
-Upunc(1:Nstep,1)=val(1:Nstep,1);
+nUpunc= filter(ones(1,Nstep)/Nstep,1,Upunc);
+nUpunc(1:Nstep,1)=Upunc(1:Nstep,1);
 
 Dwunc=val-unc;
-Dwunc= filter(ones(1,Nstep)/Nstep,1,Dwunc);
-Dwunc(1:Nstep,1)=val(1:Nstep,1);
+nDwunc= filter(ones(1,Nstep)/Nstep,1,Dwunc);
+nDwunc(1:Nstep,1)=Dwunc(1:Nstep,1);
 
 %% Now do the plot
-h=area(time,[Dwunc Upunc-Dwunc]);
+h=area(time,[nDwunc nUpunc-nDwunc]);
 h(1).FaceColor = 'none';
 h(1).LineStyle= 'none';
 h(2).FaceColor = [211/255 211/255 211/255];
 h(2).LineStyle= 'none';
 hold on
-
 %plot(time,Upunc,':m','LineWidth',1.0); plot(time,Dwunc,':m','LineWidth',1.0)
 
 plot(time,nval,'k-','LineWidth',2); hold on
 
-
 xlabel('Time')
 ylabel(mystring)
 xlim([min(time) max(time)])
-ylim([min(Dwunc) max(Upunc)])
+ylim([min(nDwunc) max(nUpunc)])
 set(gca,'FontSize',14,'FontName','Helvetica')
 
 
