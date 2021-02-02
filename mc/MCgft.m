@@ -28,10 +28,10 @@
 clear; clc; close all
 
 %% Parameters
-filename='magna_2020.mat';     %name of .mat file
+filename='catalog.mat';     %name of .mat file
 
-stime=2020;                       % Starting time for the catalog [years]
-etime=2020;                       % Ending time for the catalog 
+stime=2016;                       % Starting time for the catalog [years]
+etime=2016;                       % Ending time for the catalog 
 %--------------------------------------------------------------------------
 
 %% 00. Add to path
