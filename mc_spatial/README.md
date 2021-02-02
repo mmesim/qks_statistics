@@ -9,7 +9,7 @@ Script to calculate Spatial distribution of Mc using the Maximum Curvature metho
 
 Input: catalog in .mat format
 
-Outpu: Maps + ascii file
+Output: Maps + ascii file
 
 How to: 
 
