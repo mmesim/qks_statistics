@@ -11,12 +11,12 @@ Nstep=10;
 %After Mc
 N=50;               % Minimum Number of events after applying Mc
 %This works better in case you want to split the catalog into sup-periods
-stime=1981;         % Starting time for the catalog [years]
+stime=2016;         % Starting time for the catalog [years]
 etime=2016;         % Ending time for the catalog 
 %Uncertainties
 Nboot=200;          %Number of bootstraps for Mc uncertainties  
 %.mat filename
-filename='northern_utah.mat';    
+filename='catalog.mat';    
 %set number of workers for parpool
 workers=3;
 %--------------------------------------------------------------------------
