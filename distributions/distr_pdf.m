@@ -1,5 +1,4 @@
 %Fit PDF to a catalog
-%procedure same as Corral, 2006
 clear; clc ; close all
 
 %% load catalog
