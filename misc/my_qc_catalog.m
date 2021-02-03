@@ -7,7 +7,7 @@ mydir=pwd; pdir=sprintf('%s/src/',pwd); % get working directory path
 addpath(genpath(pdir));  %add src to path 
 
 %% 00. load catalog
-filename='UtahMlMc.txt'; %filename or full path with filename
+filename='Utah.txt'; %filename or full path with filename
 % Format: Year MonthDayHrMinSec Lat Lon Depth Mag [6 columns - no strings]
 a=read_cat(filename);
 %% 01. fix magnitudes -- round to 0.1
