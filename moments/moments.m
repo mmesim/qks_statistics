@@ -2,7 +2,7 @@ function [tmax,S,K]=moments(a,index)
 %--------------------------------------------------------------------------
 %calculate tmax, skewness, and kurtosis of Moment release
 %Input: a [Array, earthquake catalog]
-%format YYYY-MM-DD-HR-MIN-SEC.MSEC LAT LON DEPTH MAG 
+%format YYYY MM DD HR MIN SEC.MSEC LAT LON DEPTH MAG 
 %It doesn't matter if there are more columns
 %Here we work with the first 10
 %Note: Remove all strings
